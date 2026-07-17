@@ -303,7 +303,7 @@ ul {
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
-  border-color: #ff5722; orange highlight when a field is active
+  border-color: #ff5722;
 }
 
 
@@ -339,4 +339,5 @@ ul {
   .contact-grid {
     grid-template-columns: 1fr;
   }
+}
 }
