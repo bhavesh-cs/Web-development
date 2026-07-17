@@ -1,0 +1,342 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* makes width/padding math predictable */
+}
+
+body {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  color: #1a1a1a;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Reusable button style — used in hero, plans, and form */
+.btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #ff5722, #ff8a50); /* gradient = smooth color blend */
+  color: #fff;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 30px; /* fully rounded "pill" button */
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* smooth hover animation */
+}
+
+.btn:hover {
+  transform: translateY(-3px); /* lifts the button slightly on hover */
+  box-shadow: 0 8px 20px rgba(255, 87, 34, 0.4); /* glow effect */
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #ff5722;
+  color: #ff5722;
+}
+
+   /* 2. HEADER + HERO */
+
+.site-header {
+  background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+              url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1200")
+              center/cover no-repeat; /* dark overlay + background photo */
+  color: #fff;
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #ff5722;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 24px;
+  font-weight: 600;
+  position: relative; 
+}
+
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #ff5722;
+  transition: width 0.3s ease;
+}
+
+.nav a:hover::after {
+  width: 100%;
+}
+
+.hero-content {
+  text-align: center;
+  padding: 100px 20px 120px;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+
+.hero-content p {
+  max-width: 500px;
+  margin: 0 auto 28px;
+  color: #ddd;
+}
+
+
+   /* 3. SECTIONS */
+
+.section {
+  padding: 70px 0;
+}
+
+.section-alt {
+  background-color: #fff; /* alternates section background for visual rhythm */
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+
+.section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #ff5722;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+
+   /* 4. TRAINERS */
+
+.trainer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.trainer-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden; /* keeps the image corners rounded too */
+  text-align: center;
+  padding-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trainer-card:hover {
+  transform: translateY(-8px); 
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+.trainer-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover; 
+  margin-bottom: 16px;
+}
+
+.trainer-specialty {
+  color: #ff5722;
+  font-weight: 700;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.trainer-card p:last-child {
+  padding: 0 16px;
+  color: #555;
+  font-size: 0.9rem;
+
+  /* 5. MEMBERSHIP PLANS */
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  align-items: center;
+}
+
+.plan-card {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 40px 24px;
+  text-align: center;
+  border: 1px solid #eee;
+  transition: transform 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: scale(1.03); 
+}
+
+.plan-featured {
+  background: #1a1a1a;
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+.plan-featured .price {
+  color: #ff8a50;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ff5722;
+  margin: 16px 0;
+}
+
+.price span {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: inherit;
+  opacity: 0.7;
+}
+
+.plan-card ul {
+  margin: 20px 0;
+  text-align: left;
+}
+
+.plan-card li {
+  padding: 6px 0;
+}
+
+.plan-card li::before {
+  content: "✓ ";
+  color: #ff5722;
+  font-weight: 700;
+}
+   /* 6. SCHEDULE TABLE */
+  
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.schedule-table th,
+.schedule-table td {
+  padding: 14px 16px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.schedule-table th {
+  background: #1a1a1a;
+  color: #fff;
+}
+
+.schedule-table tr:hover td {
+  background: #fff3ee;
+}
+
+   /* 7. CONTACT */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.contact-info p {
+  margin-bottom: 14px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #ff5722; orange highlight when a field is active
+}
+
+
+   /* 8. FOOTER */
+ 
+.site-footer {
+  background: #1a1a1a;
+  color: #aaa;
+  text-align: center;
+  padding: 24px 0;
+  font-size: 0.9rem;
+}
+
+
+@media (max-width: 700px) {
+  .site-header .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav a {
+    margin: 0 10px;
+  }
+
+  .hero-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .plan-featured {
+    transform: none;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
