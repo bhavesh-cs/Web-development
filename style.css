@@ -2,7 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; 
+  box-sizing: border-box;
+}
 
 body {
   font-family: "Segoe UI", Roboto, sans-serif;
@@ -32,7 +33,7 @@ ul {
   color: #fff;
   padding: 12px 28px;
   border: none;
-  border-radius: 30px; 
+  border-radius: 30px;
   font-weight: 700;
   text-decoration: none;
   cursor: pointer;
@@ -41,7 +42,7 @@ ul {
 
 .btn:hover {
   transform: translateY(-3px); 
-  box-shadow: 0 8px 20px rgba(255, 87, 34, 0.4);
+  box-shadow: 0 8px 20px rgba(255, 87, 34, 0.4); 
 }
 
 .btn-outline {
@@ -50,7 +51,6 @@ ul {
   color: #ff5722;
 }
 
-   /* 2. HEADER + HERO */
 
 .site-header {
   background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
@@ -77,7 +77,7 @@ ul {
   text-decoration: none;
   margin-left: 24px;
   font-weight: 600;
-  position: relative; 
+  position: relative;
 }
 
 
@@ -113,8 +113,6 @@ ul {
 }
 
 
-   /* 3. SECTIONS */
-
 .section {
   padding: 70px 0;
 }
@@ -142,8 +140,6 @@ ul {
 }
 
 
-   /* 4. TRAINERS */
-
 .trainer-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -153,7 +149,7 @@ ul {
 .trainer-card {
   background: #fff;
   border-radius: 12px;
-  overflow: hidden;
+  overflow: hidden; 
   text-align: center;
   padding-bottom: 20px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
@@ -161,7 +157,7 @@ ul {
 }
 
 .trainer-card:hover {
-  transform: translateY(-8px); 
+  transform: translateY(-8px);
   box-shadow: 0 12px 24px rgba(0,0,0,0.15);
 }
 
@@ -183,8 +179,8 @@ ul {
   padding: 0 16px;
   color: #555;
   font-size: 0.9rem;
+}
 
-  /* 5. MEMBERSHIP PLANS */
 
 .plans-grid {
   display: grid;
@@ -205,6 +201,7 @@ ul {
 .plan-card:hover {
   transform: scale(1.03); 
 }
+
 
 .plan-featured {
   background: #1a1a1a;
@@ -245,8 +242,8 @@ ul {
   color: #ff5722;
   font-weight: 700;
 }
-   /* 6. SCHEDULE TABLE */
-  
+
+
 .schedule-table {
   width: 100%;
   border-collapse: collapse;
@@ -269,10 +266,9 @@ ul {
 }
 
 .schedule-table tr:hover td {
-  background: #fff3ee;
+  background: #fff3ee; 
 }
 
-   /* 7. CONTACT */
 
 .contact-grid {
   display: grid;
@@ -306,8 +302,6 @@ ul {
 }
 
 
-   /* 8. FOOTER */
- 
 .site-footer {
   background: #1a1a1a;
   color: #aaa;
@@ -316,6 +310,8 @@ ul {
   font-size: 0.9rem;
 }
 
+
+ 
 
 @media (max-width: 700px) {
   .site-header .container {
@@ -332,11 +328,10 @@ ul {
   }
 
   .plan-featured {
-    transform: none;
+    transform: none; 
   }
 
   .contact-grid {
     grid-template-columns: 1fr;
   }
-}
 }
