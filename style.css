@@ -25,7 +25,7 @@ ul {
   list-style: none;
 }
 
-/* Reusable button style — used in hero, plans, and form */
+
 .btn {
   display: inline-block;
   background: linear-gradient(135deg, #ff5722, #ff8a50);
