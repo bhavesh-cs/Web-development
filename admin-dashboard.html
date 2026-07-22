@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Muscle Monk Gymnasium</title>
+    <link rel="stylesheet" href="admin.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="admin-layout">
+
+        <aside class="sidebar">
+            <div class="sidebar-logo">Muscle Monk</div>
+            <ul class="sidebar-links">
+                <li class="active"><a href="admin-dashboard.html"><i class='bx bx-grid-alt'></i> Dashboard</a></li>
+                <li><a href="admin-members.html"><i class='bx bx-user'></i> Members</a></li>
+                <li><a href="admin-plans.html"><i class='bx bx-id-card'></i> Membership Plans</a></li>
+                <li><a href="admin-payments.html"><i class='bx bx-credit-card'></i> Payments</a></li>
+                <li><a href="admin-announcements.html"><i class='bx bxs-megaphone'></i> Announcements</a></li>
+                <li><a href="admin-settings.html"><i class='bx bx-cog'></i> Settings</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <header class="topbar">
+                <h1>Dashboard</h1>
+                <div class="admin-profile">
+                    <div class="avatar">GA</div>
+                    <span>Gym Admin</span>
+                </div>
+            </header>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <p class="stat-label">Total Members</p>
+                    <p class="stat-value">8</p>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-label">Active</p>
+                    <p class="stat-value">5</p>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-label">Expired</p>
+                    <p class="stat-value">1</p>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-label">New Registrations</p>
+                    <p class="stat-value">3</p>
+                </div>
+            </div>
+        </main>
+
+    </div>
+</body>
+</html>

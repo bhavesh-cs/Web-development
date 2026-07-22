@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings | Muscle Monk Gymnasium</title>
+    <link rel="stylesheet" href="admin.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="admin-layout">
+
+        <aside class="sidebar">
+            <div class="sidebar-logo">Muscle Monk</div>
+            <ul class="sidebar-links">
+                <li><a href="admin-dashboard.html"><i class='bx bx-grid-alt'></i> Dashboard</a></li>
+                <li><a href="admin-members.html"><i class='bx bx-user'></i> Members</a></li>
+                <li><a href="admin-plans.html"><i class='bx bx-id-card'></i> Membership Plans</a></li>
+                <li><a href="admin-payments.html"><i class='bx bx-credit-card'></i> Payments</a></li>
+                <li><a href="admin-announcements.html"><i class='bx bxs-megaphone'></i> Announcements</a></li>
+                <li class="active"><a href="admin-settings.html"><i class='bx bx-cog'></i> Settings</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <header class="topbar">
+                <h1>Settings</h1>
+                <div class="admin-profile">
+                    <div class="avatar">GA</div>
+                    <span>Gym Admin</span>
+                </div>
+            </header>
+
+            <div class="settings-grid">
+
+                <div class="settings-card">
+                    <h3>Gym profile</h3>
+                    <p class="settings-sub">Public information about your gym.</p>
+                    <hr class="settings-divider">
+
+                    <form action="" class="settings-form">
+                        <div class="field-group">
+                            <label>Gym name</label>
+                            <input type="text" placeholder="Enter gym name">
+                        </div>
+
+                        <div class="field-row">
+                            <div class="field-group">
+                                <label>Contact number</label>
+                                <input type="tel" placeholder="+91 98200 12345">
+                            </div>
+                            <div class="field-group">
+                                <label>Email</label>
+                                <input type="email" placeholder="hello@yourgym.com">
+                            </div>
+                        </div>
+
+                        <div class="field-group">
+                            <label>Address</label>
+                            <input type="text" placeholder="Enter gym address">
+                        </div>
+
+                        <button type="submit" class="save-btn">Save changes</button>
+                    </form>
+                </div>
+
+                <div class="settings-card">
+                    <h3>Notifications</h3>
+                    <p class="settings-sub">Choose what to be alerted about.</p>
+                    <hr class="settings-divider">
+
+                    <div class="toggle-row">
+                        <div>
+                            <p class="toggle-title">Renewals</p>
+                            <p class="toggle-sub">Get notified before memberships expire</p>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+
+                    <div class="toggle-row">
+                        <div>
+                            <p class="toggle-title">Payments</p>
+                            <p class="toggle-sub">New payments and failed attempts</p>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+
+                    <div class="toggle-row">
+                        <div>
+                            <p class="toggle-title">New members</p>
+                            <p class="toggle-sub">When someone signs up</p>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Plans | Muscle Monk Gymnasium</title>
+    <link rel="stylesheet" href="admin.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="admin-layout">
+
+        <aside class="sidebar">
+            <div class="sidebar-logo">Muscle Monk</div>
+            <ul class="sidebar-links">
+                <li><a href="admin-dashboard.html"><i class='bx bx-grid-alt'></i> Dashboard</a></li>
+                <li><a href="admin-members.html"><i class='bx bx-user'></i> Members</a></li>
+                <li class="active"><a href="admin-plans.html"><i class='bx bx-id-card'></i> Membership Plans</a></li>
+                <li><a href="admin-payments.html"><i class='bx bx-credit-card'></i> Payments</a></li>
+                <li><a href="admin-announcements.html"><i class='bx bxs-megaphone'></i> Announcements</a></li>
+                <li><a href="admin-settings.html"><i class='bx bx-cog'></i> Settings</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <header class="topbar">
+                <h1>Membership Plans</h1>
+                <div class="topbar-right">
+                    <button class="add-member-btn"><i class='bx bx-plus'></i> New Plan</button>
+                    <div class="admin-profile">
+                        <div class="avatar">GA</div>
+                        <span>Gym Admin</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="plans-grid">
+
+                <div class="plan-card">
+                    <div class="plan-card-header">
+                        <div>
+                            <h3>Monthly</h3>
+                            <p class="plan-members">3 members on this plan</p>
+                        </div>
+                        <div class="plan-actions">
+                            <i class='bx bx-pencil'></i>
+                            <i class='bx bx-trash'></i>
+                        </div>
+                    </div>
+                    <p class="plan-price">₹1500<span>/1mo</span></p>
+                    <ul class="plan-features">
+                        <li><i class='bx bx-check'></i> Gym access</li>
+                        <li><i class='bx bx-check'></i> Locker</li>
+                        <li><i class='bx bx-check'></i> Cardio access</li>
+                    </ul>
+                </div>
+
+                <div class="plan-card">
+                    <div class="plan-card-header">
+                        <div>
+                            <h3>Quarterly</h3>
+                            <p class="plan-members">4 members on this plan</p>
+                        </div>
+                        <div class="plan-actions">
+                            <i class='bx bx-pencil'></i>
+                            <i class='bx bx-trash'></i>
+                        </div>
+                    </div>
+                    <p class="plan-price">₹4000<span>/3mo</span></p>
+                    <ul class="plan-features">
+                        <li><i class='bx bx-check'></i> Everything in Monthly</li>
+                        <li><i class='bx bx-check'></i> Steam room access</li>
+                        <li><i class='bx bx-check'></i> 1 trainer session</li>
+                    </ul>
+                </div>
+
+                <div class="plan-card">
+                    <div class="plan-card-header">
+                        <div>
+                            <h3>Half-Yearly</h3>
+                            <p class="plan-members">2 members on this plan</p>
+                        </div>
+                        <div class="plan-actions">
+                            <i class='bx bx-pencil'></i>
+                            <i class='bx bx-trash'></i>
+                        </div>
+                    </div>
+                    <p class="plan-price">₹6000<span>/6mo</span></p>
+                    <ul class="plan-features">
+                        <li><i class='bx bx-check'></i> Everything in Quarterly</li>
+                        <li><i class='bx bx-check'></i> 4 trainer sessions</li>
+                        <li><i class='bx bx-check'></i> Diet plan</li>
+                    </ul>
+                </div>
+
+                <div class="plan-card featured">
+                    <span class="popular-badge">Popular</span>
+                    <div class="plan-card-header">
+                        <div>
+                            <h3>Yearly</h3>
+                            <p class="plan-members">1 member on this plan</p>
+                        </div>
+                        <div class="plan-actions">
+                            <i class='bx bx-pencil'></i>
+                            <i class='bx bx-trash'></i>
+                        </div>
+                    </div>
+                    <p class="plan-price">₹10000<span>/12mo</span></p>
+                    <ul class="plan-features">
+                        <li><i class='bx bx-check'></i> Everything in Half-Yearly</li>
+                        <li><i class='bx bx-check'></i> Unlimited trainer sessions</li>
+                        <li><i class='bx bx-check'></i> Nutrition coach</li>
+                    </ul>
+                </div>
+
+            </div>
+        </main>
+
+    </div>
+</body>
+</html>

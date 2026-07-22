@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+     <div class="login-page">
+
+        <div class="side-panel">
+            <h1>Muscle Monk Gymnasium</h1>
+            <p>Train hard, stay consistent, and become the strongest version of yourself. Open daily 6 AM – 10 PM.</p>
+
+            <div class="socials">
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-whatsapp'></i></a>
+            </div>
+        </div>
+    <div class="wrapper">
+        <form action="">
+            <h1>Register</h1>
+
+              <div class="role-toggle">
+                <input type="radio" name="role" id="roleMember" value="member" checked hidden>
+                <label for="roleMember" class="role-btn">Member</label>
+
+                <input type="radio" name="role" id="roleAdmin" value="admin" hidden>
+                <label for="roleAdmin" class="role-btn">Gym Admin</label>
+            </div>
+            
+            <div class="input-box">
+                <input type="text" placeholder="Username" required>
+                <i class='bx bx-user-circle'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" required>
+                <i class='bx bx-lock'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Confirm Password" required>
+                <i class='bx bx-lock-alt'></i>
+            </div>
+            <button type="submit" class="btn">Register</button>
+            <div class="register-link">
+                <p>Already have an account? <a href="login.html">Login</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
