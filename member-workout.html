@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Planner | Muscle Monk Gymnasium</title>
+    <link rel="stylesheet" href="member.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="admin-layout">
+
+        <aside class="sidebar">
+            <div class="sidebar-logo">Muscle Monk</div>
+            <ul class="sidebar-links">
+                <li><a href="member-dashboard.html"><i class='bx bx-grid-alt'></i> Dashboard</a></li>
+                <li><a href="member-membership.html"><i class='bx bx-id-card'></i> Membership</a></li>
+                <li class="active"><a href="member-workout.html"><i class='bx bx-dumbbell'></i> Workout Planner</a></li>
+                <li><a href="member-payments.html"><i class='bx bx-credit-card'></i> Payments</a></li>
+                <li><a href="member-profile.html"><i class='bx bx-user'></i> Profile</a></li>
+                <li><a href="member-settings.html"><i class='bx bx-cog'></i> Settings</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <header class="topbar">
+                <h1>Workout Planner</h1>
+                <div class="admin-profile">
+                    <div class="avatar">AS</div>
+                    <div class="profile-text">
+                        <p class="profile-name">Aarav S.</p>
+                        <p class="profile-role">Member</p>
+                    </div>
+                </div>
+            </header>
+
+            <div class="workout-week-grid">
+
+                <div class="day-card today">
+                    <div class="day-card-top">
+                        <p class="day-name">Monday</p>
+                        <div class="day-card-actions">
+                            <span class="today-badge">Today</span>
+                           <button class="day-edit">
+                            <i class='bx bx-pencil '></i>
+                           </button> 
+                        </div>
+                    </div>
+                    <div class="day-icon"><i class='bx bx-dumbbell'></i></div>
+                    <h3>Push</h3>
+                    <p class="day-duration"><i class='bx bx-time-five'></i> 65 min</p>
+                    <p class="day-exercises">Flat bench, incline dumbbell, shoulder press, lateral raises, tricep pushdown, OHD extension</p>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-card-top">
+                        <p class="day-name">Tuesday</p>
+                        <div class="day-card-actions">
+                           <button class="day-edit">
+                             <i class='bx bx-pencil '></i>
+                           </button>
+                        </div>
+                    </div>
+                    <div class="day-icon"><i class='bx bx-dumbbell'></i></div>
+                    <h3>Pull</h3>
+                    <p class="day-duration"><i class='bx bx-time-five'></i> 60 min</p>
+                    <p class="day-exercises">Lat pulldown, back rows, rear delt, incline dumbbell curl, hammer curl</p>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-card-top">
+                        <p class="day-name">Wednesday</p>
+                        <div class="day-card-actions">
+                           <button class="day-edit">
+                              <i class='bx bx-pencil '></i>
+                           </button>
+                        </div>
+                    </div>
+                    <div class="day-icon"><i class='bx bx-dumbbell'></i></div>
+                    <h3>Legs</h3>
+                    <p class="day-duration"><i class='bx bx-time-five'></i> 50 min</p>
+                    <p class="day-exercises">Squats, leg press, hamstring curl, calves</p>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-card-top">
+                        <p class="day-name">Thursday</p>
+                        <div class="day-card-actions">
+                          <button class="day-edit">
+                            <i class='bx bx-pencil '></i>
+                           </button>
+                        </div>
+                    </div>
+                    <div class="day-icon"><i class='bx bx-dumbbell'></i></div>
+                    <h3>Cardio + Abs</h3>
+                    <p class="day-duration"><i class='bx bx-time-five'></i> 40 min</p>
+                    <p class="day-exercises">Treadmill intervals, planks, hanging leg raises, cable crunches</p>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-card-top">
+                        <p class="day-name">Friday</p>
+                        <div class="day-card-actions">
+                            <button class="day-edit">
+                              <i class='bx bx-pencil'></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="day-icon"><i class='bx bx-dumbbell'></i></div>
+                    <h3>Chest + Back</h3>
+                    <p class="day-duration"><i class='bx bx-time-five'></i> 50 min</p>
+                    <p class="day-exercises">Incline bench, cable flys, seated rows, single arm lat pulldown</p>
+                </div>
+
+                <div class="day-card">
+                    <div class="day-card-top">
+                        <p class="day-name">Saturday</p>
+                        <div class="day-card-actions">
+                           <button class="day-edit">
+                             <i class='bx bx-pencil '></i>
+                           </button>
+                        </div>
+                    </div>
+                    <div class="day-icon"><i class='bx bx-dumbbell'></i></div>
+                    <h3>Shoulders + Arms</h3>
+                    <p class="day-duration"><i class='bx bx-time-five'></i> 60 min</p>
+                    <p class="day-exercises">Dumbbell cable curl, concentration curls, rope pushdown, single arm tricep pushdown, dumbbell shoulder press, superset</p>
+                </div>
+
+                <div class="day-card rest">
+                    <div class="day-card-top">
+                        <p class="day-name">Sunday</p>
+                        <div class="day-card-actions">
+                           <button class="day-edit">
+                             <i class='bx bx-pencil '></i>
+                           </button>
+                        </div>
+                    </div>
+                    <div class="day-icon"><i class='bx bx-dumbbell'></i></div>
+                    <h3>Rest Day</h3>
+                    <p class="day-duration"><i class='bx bx-time-five'></i> —</p>
+                    <p class="day-exercises">Stretch and recover</p>
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+</body>
+</html>
