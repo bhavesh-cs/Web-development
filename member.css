@@ -107,7 +107,7 @@ body {
     color: rgba(255,255,255,0.5);
 }
 
-/* Stats */
+/* Stats (dashboard page) */
 .stats-grid {
     display: flex;
     gap: 20px;
@@ -167,7 +167,6 @@ body {
     margin-top: 4px;
 }
 
-/* Split layout */
 .dashboard-split {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -175,7 +174,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* Workout card */
+/* Workout card (dashboard page) */
 .workout-card {
     background: #141414;
     border: 1px solid rgba(255,255,255,0.08);
@@ -210,6 +209,7 @@ body {
     margin-bottom: 20px;
 }
 
+/* Progress bar (used on dashboard + membership pages) */
 .progress-bar {
     width: 100%;
     height: 8px;
@@ -262,7 +262,7 @@ body {
     border: 1px solid rgba(255,255,255,0.1);
 }
 
-/* Membership card */
+/* Small membership summary card (dashboard page sidebar box) */
 .membership-card {
     background: #141414;
     border: 1px solid rgba(255,255,255,0.08);
@@ -283,23 +283,10 @@ body {
     margin-bottom: 16px;
 }
 
-.membership-label {
-    font-size: 11.5px;
-    color: #a3ff12;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-bottom: 4px;
-}
-
 .membership-plan {
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 4px;
-}
-
-.membership-price {
-    font-size: 13px;
-    color: rgba(255,255,255,0.6);
 }
 
 .membership-link {
@@ -313,7 +300,7 @@ body {
     border-top: 1px solid rgba(255,255,255,0.08);
 }
 
-/* Preview cards */
+/* Preview cards (dashboard page: announcements + payments) */
 .preview-card {
     background: #141414;
     border: 1px solid rgba(255,255,255,0.08);
@@ -382,6 +369,7 @@ body {
     margin-bottom: 4px;
 }
 
+/* Tag/status badges (reused across pages) */
 .tag {
     padding: 3px 12px;
     border-radius: 20px;
@@ -406,6 +394,7 @@ body {
     color: #a3ff12;
 }
 
+/* Big current-membership banner card (membership page) */
 .current-membership-card {
     background: radial-gradient(circle at top left, rgba(163,255,18,0.08), #141414 60%);
     border: 1px solid rgba(163,255,18,0.2);
@@ -491,20 +480,8 @@ body {
     transition: 0.3s ease-in-out;
 }
 
-.plan-card:hover{
+.plan-card:hover {
     transform: scale(1.10);
-}
-
-.current-badge {
-    position: absolute;
-    top: -14px;
-    left: 25px;
-    background: #a3ff12;
-    color: #0a0a0a;
-    font-size: 12px;
-    font-weight: 700;
-    padding: 4px 14px;
-    border-radius: 20px;
 }
 
 .plan-card.featured {
@@ -523,7 +500,11 @@ body {
     font-size: 20px;
 }
 
+/* Current badge — single rule only (duplicate removed) */
 .current-badge {
+    position: absolute;
+    top: -14px;
+    left: 25px;
     background: #a3ff12;
     color: #0a0a0a;
     font-size: 12px;
@@ -587,4 +568,130 @@ body {
     background: #1e1e1e;
     color: white;
     border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Workout planner grid */
+.workout-week-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.day-card {
+    background: #141414;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px;
+    padding: 22px;
+    position: relative;
+    transition: 0.3s ease-in-out;
+}
+
+.day-card:hover {
+    transform: scale(1.07);
+}
+
+.day-card.today {
+    border: 1px solid #a3ff12;
+    box-shadow: 0 0 25px rgba(163,255,18,0.2);
+}
+
+.day-card.rest {
+    opacity: 1;
+}
+
+.day-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.day-card-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.day-name {
+    font-size: 12.5px;
+    color: rgba(255,255,255,0.5);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.today-badge {
+    background: #a3ff12;
+    color: #0a0a0a;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 12px;
+    border-radius: 20px;
+}
+
+.day-edit {
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.08);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+    padding: 0;
+}
+
+.day-edit i{
+    font-size: 16px;
+    color: rgba(255,255,255,.7);
+    line-height: 1;
+}
+
+.day-edit:hover{
+    background:#a3ff12;
+}
+
+.day-edit:hover i{
+    color:#111;
+}
+
+
+.day-edit:hover {
+    background: #a3ff12;
+    color: #0a0a0a;
+}
+
+.day-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(163,255,18,0.1);
+    color: #a3ff12;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.day-card h3 {
+    font-size: 19px;
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+
+.day-duration {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 14px;
+}
+
+.day-exercises {
+    font-size: 13.5px;
+    color: rgba(255,255,255,0.7);
+    line-height: 1.5;
 }
