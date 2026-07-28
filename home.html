@@ -1,109 +1,382 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muscle monk Gym</title>
+    <title>Muscle Monk Gymnasium</title>
+
     <link rel="stylesheet" href="home.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
 
     <nav class="navbar">
-        <div class="logo">Muscle monk gym</div>
+        <div class="logo">
+            Muscle Monk
+        </div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#classes">Classes</a></li>
             <li><a href="#amenities">Amenities</a></li>
-            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#pricing">Membership</a></li>
+            <li><a href="#location">Location</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+
+        <a href="member-dashboard.html" class="member-profile">
+            <div class="member-avatar">
+                AS
+            </div>
+            <div class="member-info">
+                <span class="member-name">Aarav Sharma</span>
+                <small>Member Dashboard</small>
+            </div>
+        </a>
+
     </nav>
 
     <section class="hero" id="home">
-        <h1>Push Your Limits</h1>
-        <p>Train hard. Get stronger. Every day.</p>
-        <p class="hours">Open daily: 6:00 AM – 10:00 PM</p>
-        <a href="#pricing" class="btn">Join Now</a>
+        <div class="hero-overlay"></div>
++        <div class="hero-content">
+            <span class="hero-tag">
+                Muscle Monk Gymnasium
+            </span>
+            <h1>
+                Transform Your Body.<br>
+                Build Your Strength.
+            </h1>
+            <p class="hero-subtitle">
+                Professional Equipment • Certified Trainers •
+                Personal Guidance • Affordable Memberships
+            </p>
+
+            <p class="hours">
+                <i class='bx bx-time-five'></i>
+                Open Daily : 6:00 AM – 10:00 PM
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#pricing" class="btn btn-primary">
+                    Join Now
+                </a>
+
+                <a href="#classes" class="btn btn-secondary">
+                    Explore Classes
+                </a>
+
+            </div>
+        </div>
+
     </section>
 
     <section class="classes" id="classes">
-        <h2>Our Classes</h2>
+        <div class="section-title">
+            <span>WHAT WE OFFER</span>
+            <h2>
+                Train Smarter.<br>
+                Become Stronger.
+            </h2>
+            <p>
+                Whether you're a beginner or an experienced athlete,
+                we have the right training program for you.
+            </p>
+        </div>
+
         <div class="class-grid">
             <div class="class-card">
-                <h3>Normal Gym</h3>
-                <p>Full access to gym floor and equipment</p>
+                <div class="class-overlay"></div>
+                <div class="class-content">
+                    <i class='bx bx-dumbbell'></i>
+                    <h3>Strength Training</h3>
+                    <p>
+                        Build muscle and increase strength using
+                        modern gym equipment.
+                    </p>
+                </div>
+            </div>
+
+            <div class="class-card">
+                <div class="class-overlay"></div>
+                <div class="class-content">
+                    <i class='bx bx-run'></i>
+                    <h3>Cardio Fitness</h3>
+                    <p>
+                        Improve stamina and burn calories with
+                        high-energy cardio sessions.
+                    </p>
+                </div>
+            </div>
+
+            <div class="class-card">
+                <div class="class-overlay"></div>
+                <div class="class-content">
+                    <i class='bx bx-target-lock'></i>
+                    <h3>Functional Training</h3>
+                    <p>
+                        Enhance balance, flexibility and overall
+                        body movement.
+                    </p>
+                </div>
+            </div>
+
+           <div class="class-card">
+                <div class="class-overlay"></div>
+                <div class="class-content">
+                    <i class='bx bx-body'></i>
+                    <h3>CrossFit</h3>
+                    <p>
+                        High-intensity workouts designed to
+                        maximize performance.
+                    </p>
+                </div>
             </div>
             <div class="class-card">
-                <h3>Cardio</h3>
-                <p>Dedicated cardio sessions</p>
+                <div class="class-overlay"></div>
+                <div class="class-content">
+                    <i class='bx bx-user-check'></i>
+                    <h3>Personal Training</h3>
+                    <p>
+                        One-on-one coaching with experienced
+                        certified trainers.
+                    </p>
+                </div>
+            </div>
+
+            <div class="class-card">
+                <div class="class-overlay"></div>
+                <div class="class-content">
+                    <i class='bx bx-heart'></i>
+                    <h3>Yoga & Recovery</h3>
+                    <p>
+                        Improve flexibility, posture and
+                        recovery with guided sessions.
+                    </p>
+                </div>
+
             </div>
         </div>
+
     </section>
 
     <section class="amenities" id="amenities">
-        <h2>Amenities</h2>
+        <div class="section-title">
+            <span>WHY CHOOSE US</span>
+            <h2>Premium Amenities</h2>
+            <p>
+                Everything you need for a comfortable and productive
+                workout experience.
+            </p>
+        </div>
         <div class="amenities-grid">
             <div class="amenity-card">
-                <i class='bx bx-water amenity-icon'></i>
+                <div class="amenity-icon">
+                   <i class='bx bx-water'></i>
+                </div>
                 <h3>Steam Room</h3>
+                <p>Relax and recover after intense workouts.</p>
+            </div>
+
+            <div class="amenity-card">
+                  <div class="amenity-icon">
+                   <i class='bx bx-wind'></i>
+                  </div>
+                <h3>Air Conditioned</h3>
+                <p>Comfortable workout environment all year.</p>
+            </div>
+
+            <div class="amenity-card">
+                  <div class="amenity-icon">
+                   <i class='bx bx-lock-alt'></i>
+                 </div>
+                <h3>Locker Facility</h3>
+                <p>Secure lockers for your belongings.</p>
+            </div>
+
+         
+            <div class="amenity-card">
+                 <div class="amenity-icon">
+                   <i class='bx bx-user-check'></i>
+                 </div>
+                <h3>Certified Trainers</h3>
+                <p>Professional guidance for every fitness goal.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="pricing" id="pricing">
+        <div class="section-title">
+            <span>MEMBERSHIP</span>
+            <h2>Choose Your Plan</h2>
+            <p>
+                Affordable memberships designed for every fitness journey.
+            </p>
+        </div>
+
+        <div class="pricing-grid">
+            <div class="price-card">
+                <h3>Monthly</h3>
+                <div class="price">
+                    ₹1500
+                    <span>per month</span>
+                </div>
+
+                <ul class="plan-features">
+                    <li><i class='bx bx-check'></i> Unlimited Gym Access</li>
+                    <li><i class='bx bx-check'></i> Cardio Zone</li>
+                    <li><i class='bx bx-check'></i> Locker Facility</li>
+                    <li><i class='bx bx-check'></i> Trainer Support</li>
+                </ul>
+                <a href="#" class="plan-btn">Choose Plan</a>
+
+            </div>
+            <div class="price-card">
+                <h3>Quarterly</h3>
+                <div class="price">
+                    ₹4000
+                    <span>3 Months</span>
+                </div>
+
+                <ul class="plan-features">
+                    <li><i class='bx bx-check'></i> Unlimited Gym Access</li>
+                    <li><i class='bx bx-check'></i> Cardio Zone</li>
+                    <li><i class='bx bx-check'></i> Locker Facility</li>
+                    <li><i class='bx bx-check'></i> Trainer Support</li>
+                </ul>
+
+                <a href="#" class="plan-btn">Choose Plan</a>
+
+            </div>
+            <div class="price-card featured">
+                <div class="popular-badge">
+                    MOST POPULAR
+                </div>
+                <h3>Half-Yearly</h3>
+                <div class="price">
+                    ₹6000
+                    <span>6 Months</span>
+                </div>
+                <ul class="plan-features">
+                    <li><i class='bx bx-check'></i> Unlimited Gym Access</li>
+                    <li><i class='bx bx-check'></i> Personal Trainer Guidance</li>
+                    <li><i class='bx bx-check'></i> Steam Room Access</li>
+                    <li><i class='bx bx-check'></i> Locker Facility</li>
+                    <li><i class='bx bx-check'></i> Best Value</li>
+                </ul>
+
+                <a href="#" class="plan-btn featured-btn">Join Now</a>
+
+            </div>
+            <div class="price-card">
+                <h3>Yearly</h3>
+                <div class="price">
+                    ₹10000
+                    <span>12 Months</span>
+                </div>
+                <ul class="plan-features">
+                    <li><i class='bx bx-check'></i> Unlimited Gym Access</li>
+                    <li><i class='bx bx-check'></i> Personal Trainer</li>
+                    <li><i class='bx bx-check'></i> Steam Room</li>
+                    <li><i class='bx bx-check'></i> Priority Support</li>
+                </ul>
+                <a href="#" class="plan-btn">Choose Plan</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="location" id="location">
+        <div class="section-title">
+            <span>VISIT US</span>
+            <h2>Find Our Gym</h2>
+        </div>
+        <div class="location-content">
+            <div class="location-info">
+                <p>
+                    <i class='bx bx-map'></i>
+                    Above Cooperative Bank, 1st Floor,
+                    In front of Mamaji Complex,
+                    Rau, Indore
+                </p>
+                <p>
+                    <i class='bx bx-time-five'></i>
+                    Open Daily : 6:00 AM – 10:00 PM
+                </p>
+
+                <p>
+                    <i class='bx bx-phone'></i>
+                    +91 62643 52431
+                </p>
+            </div>
+            <div class="location-map">
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.51272197246!2d75.80667897489921!3d22.63466447944753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fb55e32b3b31%3A0x2995320aaded7029!2sMuscle%20Monk%20Gymnasium!5e0!3m2!1sen!2sin!4v1784354855286!5m2!1sen!2sin"
+                    loading="lazy"
+                    allowfullscreen>
+                </iframe>
+
             </div>
         </div>
     </section>
 
-    <section class="pricing" id="pricing">
-    <h2>Membership Plans</h2>
-    <div class="pricing-grid">
-        <div class="price-card">
-            <h3>Monthly</h3>
-            <p class="price">₹1500</p>
-        </div>
-        <div class="price-card">
-            <h3>Quarterly</h3>
-            <p class="price">₹4000 <span>(3 months)</span></p>
-        </div>
-        <div class="price-card featured">
-            <h3>Half-Yearly</h3>
-            <p class="price">₹6000/negotiable <span>(6 months)</span></p>
-        </div>
-        <div class="price-card">
-            <h3>Yearly</h3>
-            <p class="price">₹10000/negotiable <span>(12 months)</span></p>
-        </div>
-    </div>
-</section>
-
-<section class="location" id="location">
-    <h2>Find Us</h2>
-    <div class="location-content">
-        <div class="location-info">
-            <p><i class='bx bx-map'></i> Above cooperative bank, 1st floor Inftont of mamaji complex, (Rau)Indore</p>
-            <p><i class='bx bx-time-five'></i> Open daily: 6:00 AM – 10:00 PM</p>
-            <p><i class='bx bx-phone'></i>6264352431</p>
-        </div>
-           <div class="location-map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.51272197246!2d75.80667897489921!3d22.63466447944753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fb55e32b3b31%3A0x2995320aaded7029!2sMuscle%20Monk%20Gymnasium!5e0!3m2!1sen!2sin!4v1784354855286!5m2!1sen!2sin"
-                width="100%"
-                height="300"
-                style="border:0; border-radius: 12px;"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="strict-origin-when-cross-origin">
-            </iframe>
-        </div>
-    </div>
-</section>
-
     <section class="contact" id="contact">
-        <h2>Contact Us</h2>
-        <form action="">
+        <div class="section-title">
+            <span>GET IN TOUCH</span>
+            <h2>Contact Us</h2>
+        </div>
+
+        <form>
             <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Mobile no" required>
-            <textarea placeholder="Message" rows="4"></textarea>
-            <button type="submit" class="btn">Send Message</button>
+            <input type="tel" placeholder="Mobile Number" required>
+            <textarea
+                rows="5"
+                placeholder="Write your message...."
+                required></textarea>
+
+            <button class="btn btn-primary" type="submit">
+                Send Message
+            </button>
         </form>
+
     </section>
 
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-about">
+                <h2>Muscle Monk Gymnasium</h2>
+                <p>
+                    Transform your body with premium equipment,
+                    experienced trainers and a motivating environment.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#classes">Classes</a>
+                <a href="#pricing">Membership</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 Muscle Monk Gymnasium. All Rights Reserved.
+        </div>
+
+    </footer>
 </body>
 </html>
