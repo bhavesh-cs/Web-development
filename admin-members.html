@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members | Muscle Monk Gymnasium</title>
+    <link rel="stylesheet" href="admin.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="admin-layout">
+
+        <aside class="sidebar">
+            <div class="sidebar-logo">Muscle Monk</div>
+            <ul class="sidebar-links">
+                <li><a href="admin-dashboard.html"><i class='bx bx-grid-alt'></i> Dashboard</a></li>
+                <li class="active"><a href="admin-members.html"><i class='bx bx-user'></i> Members</a></li>
+                <li><a href="admin-plans.html"><i class='bx bx-id-card'></i> Membership Plans</a></li>
+                <li><a href="admin-payments.html"><i class='bx bx-credit-card'></i> Payments</a></li>
+                <li><a href="admin-announcements.html"><i class='bx bxs-megaphone'></i> Announcements</a></li>
+                <li><a href="admin-settings.html"><i class='bx bx-cog'></i> Settings</a></li>
+            </ul>
+        </aside>
+
+            <main class="main-content">
+            <header class="topbar">
+                <h1>Members</h1>
+                <div class="topbar-right">
+                    <button class="add-member-btn"><i class='bx bx-plus'></i> Add Member</button>
+                    <div class="admin-profile">
+                        <div class="avatar">GA</div>
+                        <span>Gym Admin</span>
+                    </div>
+                </div>
+            </header>
+
+               <div class="filter-bar">
+                <div class="search-box">
+                    <i class='bx bx-search'></i>
+                    <input type="text" placeholder="Search by name or mobile...">
+                </div>
+                <select class="status-filter">
+                    <option>All statuses</option>
+                    <option>Active</option>
+                    <option>Expiring Soon</option>
+                    <option>Expired</option>
+                </select>
+            </div>
+
+            <div class="table-card">
+                <table class="members-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Mobile Number</th>
+                            <th>Plan</th>
+                            <th>Status</th>
+                            <th>Joined</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Rohan Mehta</td>
+                            <td>+91 98200 12345</td>
+                            <td>Yearly</td>
+                            <td><span class="status active">Active</span></td>
+                            <td>12 Jan 2026</td>
+                             <td class="actions">
+                                <i class='bx bx-pencil'></i>
+                                <i class='bx bx-trash'></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Sneha Patil</td>
+                            <td>+91 98200 54321</td>
+                            <td>Monthly</td>
+                            <td><span class="status active">Active</span></td>
+                            <td>03 Jun 2026</td>
+                             <td class="actions">
+                                <i class='bx bx-pencil'></i>
+                                <i class='bx bx-trash'></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Arjun Verma</td>
+                            <td>+91 98200 98765</td>
+                            <td>Quarterly</td>
+                            <td><span class="status expired">Expired</span></td>
+                            <td>15 Mar 2026</td>
+                             <td class="actions">
+                                <i class='bx bx-pencil'></i>
+                                <i class='bx bx-trash'></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Kavya Reddy</td>
+                            <td>+91 98200 11223</td>
+                            <td>Half-Yearly</td>
+                            <td><span class="status active">Expiring</span></td>
+                            <td>22 May 2026</td>
+                             <td class="actions">
+                                <i class='bx bx-pencil'></i>
+                                <i class='bx bx-trash'></i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+
+    </div>
+</body>
+</html>
