@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="clock.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+
+    <div class="container">
+      <header>
+        <h1>Digital Clock Dashboard</h1>
+        <h2 id="greeting">Good Morning</h2>
+        
+        <div class="clock-container">
+        <div id="clock">00:00:00</div>
+        <button id="format-btn">24H</button>
+        </div>
+
+        <div id="date">Friday, 31 July 2026</div>
+      </header>
+
+    <main class="dashboard">
+        <section class="card" id="weather-card">
+            <h3>Weather</h3>
+            <p id="city">City</p>
+            <p id="temperature">--°C</p>
+            <p id="weather-condition">Loading...</p>
+        </section>
+
+        <section class="card" id="calendar-card">
+              <h3>Calendar</h3>
+
+               <div id="calendar">
+               <div id="calendar-header"></div>
+
+               <div id="calendar-days">
+               <div>Sun</div>
+               <div>Mon</div>
+               <div>Tue</div>
+               <div>Wed</div>
+               <div>Thu</div>
+               <div>Fri</div>
+               <div>Sat</div>
+            </div>
+
+           <div id="calendar-dates"></div>
+        </div>
+    </section>
+
+        <section class="card" id="quote-card">
+            <p id="quote">Loading quote</p>
+        </section>
+
+        <section class="card" id="stopwatch-card">
+            <h3>Stopwatch</h3>
+            <h2 id="stopwatch">00:00:00</h2>
+            <div class="buttons">
+                <button id="start-btn">Start</button>
+                <button id="pause-btn">Pause</button>
+                <button id="reset-btn">Reset</button>
+            </div>
+        </section>
+
+        <section class="card" id="timer-card">
+            <h3>Countdown Timer</h3>
+            <input type="number" id="minutes" placeholder="Minutes">
+            <button id="timer-start">Start Timer</button>
+            <h2 id="timer-display">00:00</h2>
+        </section>
+
+        <section class="card" id="theme-card">
+            <h3>Theme</h3>
+            <button id="theme-toggle">Change Theme</button>
+        </section>
+    </main>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script src="clock.js"></script>
+    
+</body>
+</html>
