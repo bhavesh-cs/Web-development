@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineScope</title>
+    <link rel="stylesheet" href="movie.css">
+</head>
+<body>
+    <div class="background">
+
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+
+    </div>
+    <header class="hero">
+    <h1>🎬 CineScope</h1>
+    <h2>Search • Discover • Explore</h2>
+    <p>
+        Find information about thousands of movies,
+        ratings, posters, and much more.
+    </p>
+    <div class="hero-stats">
+        <div>
+            <h3>500K+</h3>
+            <span>Movies</span>
+        </div>
+        <div>
+            <h3>24/7</h3>
+            <span>Available</span>
+        </div>
+        <div>
+            <h3>OMDb</h3>
+            <span>Powered</span>
+        </div>
+    </div>
+    </header>
+    
+    <section class="search-section">
+    <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input
+            type="text"
+            id="search-input"
+            placeholder="Search for movies..."
+        >
+    </div>
+    <button id="search-btn">
+        Search
+    </button>
+    </section>
+
+    <section class="categories">
+         <button class="category-btn active" data-search="Avengers">🔥 Trending</button>
+         <button class="category-btn" data-search="Marvel">⭐ Top Rated</button>
+         <button class="category-btn" data-search="Romance">❤️ Romance</button>
+         <button class="category-btn" data-search="Comedy">😂 Comedy</button>
+         <button class="category-btn" data-search="Horror">😱 Horror</button>
+         <button class="category-btn" data-search="Sci-Fi">🚀 Sci-Fi</button>
+    </section>
+
+    <div id="loading" class="loading">
+        <div class="spinner"></div>
+        <p>Searching Movies...</p>
+    </div>
+
+    <main id="movies">
+          <!-- Movies cards will appear -->
+    </main>
+
+    <div id="movie-modal" class="modal">
+    <div class="modal-content">
+        <span id="close-modal">&times;</span>
+        <div id="movie-details"></div>
+    </div>
+
+    </div>
+
+    <footer>
+
+    <div class="footer-content">
+        <h2>🎬 CineScope</h2>
+        <p class="footer-description">
+            Search thousands of movies instantly.
+        </p>
+        <div class="footer-links">
+            <a href="https://github.com/bhavesh-cs">GitHub</a>
+            <a href="#">Portfolio</a>
+            <a href="#">LinkedIn</a>
+        </div>
+
+        <div class="footer-divider"></div>
+        <p class="footer-tagline">
+            ❤️ Built with Passion by <span>Bhavesh Dhule</span>
+        </p>
+
+        <p class="copyright">
+            © 2026 CineScope • Powered by OMDb API
+        </p>
+    </div>
+</footer>
+    
+    <script src="movie.js"></script>
+</body>
+</html>
